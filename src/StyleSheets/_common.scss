@@ -1,0 +1,34 @@
+@mixin display-type($type) {
+    display: $type;
+}
+
+@mixin justify-content($value) {
+    justify-content: $value;
+}
+
+@mixin align-items($value) {
+    align-items: $value;
+}
+
+@mixin color($value) {
+    color: $value;
+}
+
+.display-flex {
+    @include display-type(flex);
+}
+
+.jc-space-between {
+    @include justify-content(space-between);
+}
+
+.align-items-center {
+    @include align-items(center);
+}
+
+.color-white {
+    @include color(white);
+}
+.cursor-pointer {
+    cursor: pointer;
+}

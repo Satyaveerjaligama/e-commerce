@@ -1,9 +1,13 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import Header from "../Components/Header";
 
 const Home = () => {
     return (
-        <Typography>Home</Typography>
+        <React.Fragment>
+            <Header />
+            <Typography>Home</Typography>
+        </React.Fragment>
     )
 };
 
