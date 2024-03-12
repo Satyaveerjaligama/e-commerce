@@ -1,12 +1,17 @@
-import iphone from "../Assets/Images/iphone.jpeg";
-import moto from "../Assets/Images/moto.jpeg";
-import nothingPhone from "../Assets/Images/nothingPhone.webp";
-import oneplus from "../Assets/Images/oneplus.jpeg";
-import pixel from "../Assets/Images/pixel.jpeg";
-import samsungUltra from "../Assets/Images/samsung.jpeg";
-import samsungFold from "../Assets/Images/samsungFold.jpeg";
+import iphone from "../Assets/Images/Phones/iphone.jpeg";
+import moto from "../Assets/Images/Phones/moto.jpeg";
+import nothingPhone from "../Assets/Images/Phones/nothingPhone.webp";
+import oneplus from "../Assets/Images/Phones/oneplus.jpeg";
+import pixel from "../Assets/Images/Phones/pixel.jpeg";
+import samsungUltra from "../Assets/Images/Phones/samsung.jpeg";
+import samsungFold from "../Assets/Images/Phones/samsungFold.jpeg";
+import apple from "../Assets/Images/Watches/apple.jpeg";
+import boat from "../Assets/Images/Watches/boat.jpg";
+import fastrack from "../Assets/Images/Watches/fastrack.jpg";
+import noise from "../Assets/Images/Watches/noise.jpg";
+import samsung from "../Assets/Images/Watches/samsung.avif";
 
-export const productsList = [
+export const phoneList = [
     {
         productName: "iPhone",
         productPrice: 120000,
@@ -43,3 +48,31 @@ export const productsList = [
         productImage: samsungFold
     },
 ]
+
+export const carList = [
+    {
+        productName: "Apple",
+        productPrice: 48999,
+        productImage: apple
+    },
+    {
+        productName: "Boat",
+        productPrice: 2399,
+        productImage: boat
+    },
+    {
+        productName: "Fastrack",
+        productPrice: 4999,
+        productImage: fastrack
+    },
+    {
+        productName: "Noise",
+        productPrice: 2899,
+        productImage: noise
+    },
+    {
+        productName: "Samsung",
+        productPrice: 28999,
+        productImage: samsung
+    },
+];
