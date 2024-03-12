@@ -5,7 +5,6 @@ import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import logo from "../Assets/Images/logo.png";
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
-
 const Header = () => {
     return (
         <Card class="header">
