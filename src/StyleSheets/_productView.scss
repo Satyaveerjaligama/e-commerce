@@ -1,0 +1,31 @@
+.product-view {
+    .img-div {
+        position: relative;
+        height: 65vh;
+        text-align: -webkit-center;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .info-div {
+        
+        & p:first-child {
+            font-size: xx-large;
+            margin-bottom: 5px;
+        }
+
+        & p:nth-child(2) {
+            font-size: large;
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            width: 50%;
+            margin-bottom: 10px;
+            border-radius: 25px;
+        }
+    }
+}

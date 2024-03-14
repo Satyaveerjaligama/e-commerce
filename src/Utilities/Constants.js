@@ -15,64 +15,76 @@ export const phoneList = [
     {
         productName: "iPhone",
         productPrice: 120000,
-        productImage: iphone
+        productImage: iphone,
+        productId: "1001",
     },
     {
         productName: "Samsung Ultra",
         productPrice: 110000,
-        productImage: samsungUltra
+        productImage: samsungUltra,
+        productId: "1002",
     },
     {
         productName: "One Plus",
         productPrice: 80000,
-        productImage: oneplus
+        productImage: oneplus,
+        productId: "1003",
     },
     {
         productName: "Moto",
         productPrice: 40000,
-        productImage: moto
+        productImage: moto,
+        productId: "1004",
     },
     {
         productName: "Nothing Phone",
         productPrice: 60000,
-        productImage: nothingPhone
+        productImage: nothingPhone,
+        productId: "1005",
     },
     {
         productName: "Pixel",
         productPrice: 80000,
-        productImage: pixel
+        productImage: pixel,
+        productId: "1006",
     },
     {
         productName: "Galaxy Fold",
         productPrice: 160000,
-        productImage: samsungFold
+        productImage: samsungFold,
+        productId: "1007",
     },
 ]
 
-export const carList = [
+export const watchList = [
     {
         productName: "Apple",
         productPrice: 48999,
-        productImage: apple
+        productImage: apple,
+        productId: "2001",
     },
     {
         productName: "Boat",
         productPrice: 2399,
-        productImage: boat
+        productImage: boat,
+        productId: "2002",
     },
     {
         productName: "Fastrack",
         productPrice: 4999,
-        productImage: fastrack
+        productImage: fastrack,
+        productId: "2003",
     },
     {
         productName: "Noise",
         productPrice: 2899,
-        productImage: noise
+        productImage: noise,
+        productId: "2004",
     },
     {
         productName: "Samsung",
         productPrice: 28999,
-        productImage: samsung
+        productImage: samsung,
+        productId: "2005",
     },
 ];

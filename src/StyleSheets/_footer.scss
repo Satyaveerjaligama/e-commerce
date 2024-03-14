@@ -1,0 +1,14 @@
+@use './variables';
+
+.footer {
+    background-color: variables.$light-black;
+    color: white;
+
+    .footer-info p:first-child {
+        text-decoration: underline;
+    }
+
+    .footer-info p:nth-child(n+2) {
+        color: variables.$gray;
+    }
+}
