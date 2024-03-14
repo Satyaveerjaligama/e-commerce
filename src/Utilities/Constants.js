@@ -11,6 +11,13 @@ import fastrack from "../Assets/Images/Watches/fastrack.jpg";
 import noise from "../Assets/Images/Watches/noise.jpg";
 import samsung from "../Assets/Images/Watches/samsung.avif";
 
+export const routes = {
+    home: "home",
+    productView: "product-view",
+    cart: "cart",
+    account: "account",
+};
+
 export const phoneList = [
     {
         productName: "iPhone",
@@ -58,7 +65,7 @@ export const phoneList = [
 
 export const watchList = [
     {
-        productName: "Apple",
+        productName: "Apple Watch",
         productPrice: 48999,
         productImage: apple,
         productId: "2001",
