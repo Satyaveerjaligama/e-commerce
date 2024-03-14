@@ -4,6 +4,8 @@ import { Typography, Box, Grid } from "@mui/material";
 import Button from "../Components/CustomComponents/Button";
 import { getObject } from "../Utilities/Functions";
 import { phoneList, watchList } from "../Utilities/Constants";
+import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
+import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
 
 const ProductView = () => {
     const [productDetails, setProductDetails] = useState({});
@@ -25,8 +27,8 @@ const ProductView = () => {
                     <Grid item xs={12} md={6} className="self-center info-div">
                         <Typography sx={{fontWeight: "600"}} className="text-lg">{productDetails?.productName}</Typography>
                         <Typography sx={{fontWeight: "600"}}>&#8377; {productDetails?.productPrice?.toLocaleString("en-IN")}</Typography>
-                        <Button title="Add to cart" variant="outlined"/>
-                        <Button title="Buy now" variant="contained"/>
+                        <Button className="add-to-cart-btn" title="Add to cart" variant="outlined" endIcon={<AddShoppingCartRoundedIcon />} />
+                        <Button className="buy-now-btn" title="Buy now" variant="contained" endIcon={<ShoppingCartCheckoutRoundedIcon />} />
                     </Grid>
                 </Grid>
             </Box>

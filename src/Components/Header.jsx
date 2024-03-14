@@ -4,14 +4,17 @@ import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import logo from "../Assets/Images/logo.png";
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import { useNavigate } from "react-router-dom";
+import { routes } from "../Utilities/Constants";
 
 const Header = () => {
+    const navigate = useNavigate();
     return (
-        <Card class="header">
-            <CardContent>
+        <Card sx={{borderRadius: "0px"}}>
+            <CardContent className="header">
                 <Box className="display-flex jc-space-between align-items-center">
                     <Box className="logo cursor-pointer">
-                        <img src={logo} alt="logo" />
+                        <img src={logo} alt="logo" onClick={()=>navigate(`/${routes.home}`)}/>
                     </Box>
                     <Box>
                         <TextField
@@ -20,7 +23,7 @@ const Header = () => {
                             size="small"
                             InputProps={{
                                 endAdornment: (
-                                    <InputAdornment>
+                                    <InputAdornment position="end">
                                         <IconButton>
                                             <SearchRoundedIcon />
                                         </IconButton>

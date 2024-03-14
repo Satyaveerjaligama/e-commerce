@@ -22,10 +22,35 @@
         }
 
         button {
-            display: block;
+            display: flex;
             width: 50%;
             margin-bottom: 10px;
             border-radius: 25px;
+            text-transform: none;
+        }
+
+        .add-to-cart-btn {
+            border-color: #04364A;
+            color: #04364A;
+            box-shadow: 3px 3px 0px #1AACAC;
+            transition: transform 0.2s, box-shadow 0.2s;
+            &:hover {
+                background-color: white;
+            }
+            &:active{
+                box-shadow: 0px 0px 0px #1AACAC;
+                transform: translate(3px) translateY(3px);
+            }
+        }
+
+        .buy-now-btn {
+            background-color: #04364A;
+            box-shadow: 3px 3px 0px #1AACAC;
+            transition: transform 0.2s, box-shadow 0.2s;
+            &:active{
+                box-shadow: 0px 0px 0px #1AACAC;
+                transform: translate(3px) translateY(3px);
+            }
         }
     }
 }
