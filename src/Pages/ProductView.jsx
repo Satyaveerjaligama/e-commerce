@@ -6,19 +6,26 @@ import { getObject } from "../Utilities/Functions";
 import { phoneList, watchList } from "../Utilities/Constants";
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
+import itemNotFoundImg from "../Assets/Images/item-not-found.jpg";
 
 const ProductView = () => {
     const [productDetails, setProductDetails] = useState({});
+    const [productNotFound, setProductNotFound] = useState(false);
 
     useEffect(()=>{
         const params = new URLSearchParams(window.location.search);
         const productId = params.get("productId");
         const productObj = getObject([...phoneList, ...watchList], productId);
-        setProductDetails(productObj);
+        if(productObj) {
+            setProductDetails(productObj);
+        } else {
+            setProductNotFound(true);
+        }
     },[]);
 
     return (
         <Layout>
+            {!productNotFound ? 
             <Box className="p-5 product-view">
                 <Grid container>
                     <Grid item xs={12} md={6} className="img-div">
@@ -32,6 +39,11 @@ const ProductView = () => {
                     </Grid>
                 </Grid>
             </Box>
+            :
+            <Box className="m-auto p-5 text-webkit-center">
+                <img src={itemNotFoundImg} alt="item-not-found" style={{width:"60vh", height:"60vh"}}/>
+            </Box>
+            }
         </Layout>
     )
 }
