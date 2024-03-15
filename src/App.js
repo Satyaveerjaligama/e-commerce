@@ -4,14 +4,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductView from './Pages/ProductView';
 import { routes } from './Utilities/Constants';
 import PageNotFound from './Pages/PageNotFound';
+import Cart from './Pages/Cart';
 
 function App() {
   return (
     <Router basename='/'>
       <Routes>
         <Route Component={Home} path="/"/>
-        <Route Component={Home} path={routes.home}/>
-        <Route Component={ProductView} path={routes.productView}/>
+        <Route Component={Home} path={routes.home} />
+        <Route Component={ProductView} path={routes.productView} />
+        <Route Component={Cart} path={routes.cart} />
         <Route Component={PageNotFound} path="*" />
       </Routes>
     </Router>
