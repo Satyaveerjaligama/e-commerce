@@ -7,8 +7,11 @@ import { phoneList, watchList } from "../Utilities/Constants";
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
 import itemNotFoundImg from "../Assets/Images/item-not-found.jpg";
+import { useDispatch } from "react-redux";
+import { addItemToCart } from "../Redux/slices/cartSlice";
 
 const ProductView = () => {
+    const dispatch = useDispatch();
     const [productDetails, setProductDetails] = useState({});
     const [productNotFound, setProductNotFound] = useState(false);
 
@@ -23,6 +26,10 @@ const ProductView = () => {
         }
     },[]);
 
+    const addToCartBtnClick = () => {
+        dispatch(addItemToCart(productDetails));
+    };
+
     return (
         <Layout>
             {!productNotFound ? 
@@ -34,7 +41,7 @@ const ProductView = () => {
                     <Grid item xs={12} md={6} className="self-center info-div">
                         <Typography sx={{fontWeight: "600"}} className="text-lg">{productDetails?.productName}</Typography>
                         <Typography sx={{fontWeight: "600"}}>&#8377; {productDetails?.productPrice?.toLocaleString("en-IN")}</Typography>
-                        <Button className="add-to-cart-btn" title="Add to cart" variant="outlined" endIcon={<AddShoppingCartRoundedIcon />} />
+                        <Button className="add-to-cart-btn" title="Add to cart" variant="outlined" endIcon={<AddShoppingCartRoundedIcon />} onClick={()=>addToCartBtnClick()}/>
                         <Button className="buy-now-btn" title="Buy now" variant="contained" endIcon={<ShoppingCartCheckoutRoundedIcon />} />
                     </Grid>
                 </Grid>
