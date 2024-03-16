@@ -3,7 +3,7 @@ import { Grid, Card, CardActionArea, CardContent, Typography } from "@mui/materi
 import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
 
 const CartItem = (props) => {
-    const {productDetails, cartItemOnClick} = props;
+    const {productDetails, cartItemOnClick, itemIndex, deleteItem} = props;
 
     return (
         <Grid item xs={12} sm={6} md={4}>
@@ -17,7 +17,7 @@ const CartItem = (props) => {
                         </div>
                     </CardContent>
                 </CardActionArea>
-                <DeleteRoundedIcon className="delete-item cursor-pointer" />
+                <DeleteRoundedIcon className="delete-item cursor-pointer" onClick={()=>deleteItem(itemIndex)}/>
             </Card>
         </Grid>
     )
