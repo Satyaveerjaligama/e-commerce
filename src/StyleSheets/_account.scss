@@ -1,0 +1,19 @@
+.account-page {
+    max-width: 80vw;
+
+    .MuiCard-root {
+        border-radius: 25px;
+        cursor: pointer;
+        
+        &:hover {
+            filter: brightness(90%);
+        }
+
+        .MuiCardContent-root {
+            padding-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

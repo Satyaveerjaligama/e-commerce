@@ -36,7 +36,7 @@ const Header = () => {
                         />                      
                     </Box>
                     <Box className="display-flex jc-space-between align-items-center profile-cart color-white">
-                        <AccountCircleRoundedIcon className="cursor-pointer" />
+                        <AccountCircleRoundedIcon className="cursor-pointer" onClick={()=>navigate(`/${routes.account}`)} />
                         <div className="cursor-pointer" onClick={()=>navigate(`/${routes.cart}`)}>
                             <ShoppingCartRoundedIcon />
                             <Typography className="cart-items-number">{cartItems.length}</Typography>
