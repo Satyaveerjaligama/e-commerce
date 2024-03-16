@@ -7,7 +7,7 @@ const CartItem = (props) => {
 
     return (
         <Grid item xs={12} sm={6} md={4}>
-            <Card className="item-card">
+            <Card className="item-card box-shadow">
                 <CardActionArea onClick={()=>cartItemOnClick(productDetails.productId)}>
                     <CardContent className="flex flex-row items-center">
                         <img src={productDetails.productImage} style={{width:"200px", height: "200px", objectFit: "contain"}} alt="productImage"/>

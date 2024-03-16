@@ -29,5 +29,20 @@
             font-size: 20px;
             font-weight: 700;
         }
+
+        .total-price p {
+            font-weight: bold;
+        }
+
+        .checkout-btn button {
+            border-radius: 25px;
+            background-color: #04364A;
+            box-shadow: 3px 3px 0px #1AACAC;
+            transition: transform 0.2s, box-shadow 0.2s;
+            &:active{
+                box-shadow: 0px 0px 0px #1AACAC;
+                transform: translate(3px) translateY(3px);
+            }
+        }
     }
 }
