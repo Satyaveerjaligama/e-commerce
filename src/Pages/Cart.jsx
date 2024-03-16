@@ -9,6 +9,7 @@ import { useSelector, useDispatch } from "react-redux";
 import emptyCartImg from "../Assets/Images/empty-cart.png";
 import { updateItemsInCart } from "../Redux/slices/cartSlice";
 import Button from "../Components/CustomComponents/Button";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Cart = () => {
     const navigate = useNavigate();
@@ -74,7 +75,7 @@ const Cart = () => {
                             <Typography>&#8377; {prices.totalOrderPrice.toLocaleString('en-IN')}</Typography>
                         </div>
                         <div className="text-right mt-3 checkout-btn">
-                            <Button title="Checkout" variant="contained"/>
+                            <Button title="Checkout" variant="contained" endIcon={<ArrowForwardIcon />}/>
                         </div>
                     </CardContent>
                 </Card>
