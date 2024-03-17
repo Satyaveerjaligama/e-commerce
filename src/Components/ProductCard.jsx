@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
-// import logo from "../Assets/Images/logo.png";
+import { PropTypes } from "prop-types";
 
 const ProductCard = (props) => {
   const {productName, productPrice, productImage, productId, productOnClick} = props;
@@ -15,6 +15,14 @@ const ProductCard = (props) => {
       </CardActionArea>
     </Card>
   );
+};
+
+ProductCard.propTypes = {
+  productName: PropTypes.string,
+  productPrice: PropTypes.number,
+  productImage: PropTypes.string,
+  productId: PropTypes.number,
+  productOnClick: PropTypes.func,
 };
 
 export default ProductCard;

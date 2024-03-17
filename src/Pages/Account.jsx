@@ -36,8 +36,8 @@ const Account = () => {
         <Layout>
             <Box className="account-page mx-auto p-5">
                 <Grid container rowSpacing={2} columnSpacing={2}>
-                    { options.map((option)=>
-                        <Grid item xs={12} sm={6}>
+                    { options.map((option, index)=>
+                        <Grid item xs={12} sm={6} key={index}>
                             <Card className="box-shadow">
                                 <CardContent>
                                     <div>

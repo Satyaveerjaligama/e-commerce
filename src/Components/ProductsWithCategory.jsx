@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import ProductCard from "./ProductCard";
+import {PropTypes} from "prop-types";
 
 const ProductsWithCategory = (props) => {
     const {productsList, productOnClick} = props
@@ -14,5 +15,17 @@ const ProductsWithCategory = (props) => {
         </Grid>
     )
 }
+
+ProductsWithCategory.propTypes = {
+    productsList: PropTypes.arrayOf(
+        PropTypes.shape({
+            productName: PropTypes.string,
+            productPrice: PropTypes.number,
+            productImage: PropTypes.string,
+            productId: PropTypes.number,
+        })
+    ),
+    productOnClick: PropTypes.func,
+};
 
 export default ProductsWithCategory;
