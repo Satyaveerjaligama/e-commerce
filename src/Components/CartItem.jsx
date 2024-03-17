@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Card, CardActionArea, CardContent, Typography } from "@mui/material";
 import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
+import { PropTypes } from "prop-types"
 
 const CartItem = (props) => {
     const {productDetails, cartItemOnClick, itemIndex, deleteItem} = props;
@@ -22,5 +23,17 @@ const CartItem = (props) => {
         </Grid>
     )
 }
+
+CartItem.propTypes = {
+    productDetails: PropTypes.shape({
+        productName: PropTypes.string,
+        productPrice: PropTypes.number,
+        productImage: PropTypes.string,
+        productId: PropTypes.number,
+    }),
+    cartItemOnClick: PropTypes.func,
+    itemIndex: PropTypes.number,
+    deleteItem: PropTypes.func,
+};
 
 export default CartItem;
