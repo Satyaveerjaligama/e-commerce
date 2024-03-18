@@ -21,7 +21,7 @@ ProductCard.propTypes = {
   productName: PropTypes.string,
   productPrice: PropTypes.number,
   productImage: PropTypes.string,
-  productId: PropTypes.number,
+  productId: PropTypes.string,
   productOnClick: PropTypes.func,
 };
 

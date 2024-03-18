@@ -7,12 +7,14 @@ import { routes } from './Utilities/Constants';
 import PageNotFound from './Pages/PageNotFound';
 import Cart from './Pages/Cart';
 import Account from './Pages/Account';
+import Login from './Pages/Login';
 
 function App() {
   return (
     <Router basename='/'>
       <Routes>
         <Route Component={Home} path="/"/>
+        <Route Component={Login} path={routes.login} />
         <Route Component={Home} path={routes.home} />
         <Route Component={ProductView} path={routes.productView} />
         <Route Component={Cart} path={routes.cart} />
