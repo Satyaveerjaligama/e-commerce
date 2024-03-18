@@ -12,6 +12,7 @@ import noise from "../Assets/Images/Watches/noise.jpg";
 import samsung from "../Assets/Images/Watches/samsung.avif";
 
 export const routes = {
+    login: "login",
     home: "home",
     productView: "product-view",
     cart: "cart",

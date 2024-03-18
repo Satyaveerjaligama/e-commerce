@@ -29,7 +29,7 @@ CartItem.propTypes = {
         productName: PropTypes.string,
         productPrice: PropTypes.number,
         productImage: PropTypes.string,
-        productId: PropTypes.number,
+        productId: PropTypes.string,
     }),
     cartItemOnClick: PropTypes.func,
     itemIndex: PropTypes.number,
