@@ -46,3 +46,12 @@
         }
     }
 }
+
+@media screen and (max-width: 399.98px) {
+    .cart-item {
+        flex-direction: column;
+        .product-info {
+            margin-top: 1rem;
+        }
+    }
+}

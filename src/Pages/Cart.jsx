@@ -82,7 +82,7 @@ const Cart = () => {
             </Box>
             :
             <Box className="p-5 text-webkit-center">
-                <img src={emptyCartImg} alt="item-not-found" style={{width:"80vh", height:"60vh"}}/>
+                <img src={emptyCartImg} alt="item-not-found" style={{width:"80vh", height:"auto"}}/>
                 <Typography sx={{fontWeight: "700", fontSize: "25px"}}>Your cart is empty</Typography>
             </Box>
             }

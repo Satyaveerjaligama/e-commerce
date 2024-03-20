@@ -38,11 +38,11 @@ const ProductView = () => {
                     <Grid item xs={12} md={6} className="img-div">
                         <img src={productDetails?.productImage} height={200} alt="productImage" />
                     </Grid>
-                    <Grid item xs={12} md={6} className="self-center info-div">
+                    <Grid item xs={12} md={6} className="self-center info-div pt-4 md:pt-0">
                         <Typography sx={{fontWeight: "600"}} className="text-lg">{productDetails?.productName}</Typography>
                         <Typography sx={{fontWeight: "600"}}>&#8377; {productDetails?.productPrice?.toLocaleString("en-IN")}</Typography>
-                        <Button className="add-to-cart-btn" title="Add to cart" variant="outlined" endIcon={<AddShoppingCartRoundedIcon />} onClick={()=>addToCartBtnClick()}/>
-                        <Button className="buy-now-btn" title="Buy now" variant="contained" endIcon={<ShoppingCartCheckoutRoundedIcon />} />
+                        <Button className="add-to-cart-btn w-full sm:w-1/2" title="Add to cart" variant="outlined" endIcon={<AddShoppingCartRoundedIcon />} onClick={()=>addToCartBtnClick()}/>
+                        <Button className="buy-now-btn w-full sm:w-1/2" title="Buy now" variant="contained" endIcon={<ShoppingCartCheckoutRoundedIcon />} />
                     </Grid>
                 </Grid>
             </Box>

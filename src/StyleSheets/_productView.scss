@@ -23,7 +23,6 @@
 
         button {
             display: flex;
-            width: 50%;
             margin-bottom: 10px;
             border-radius: 25px;
             text-transform: none;
@@ -52,5 +51,17 @@
                 transform: translate(3px) translateY(3px);
             }
         }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .img-div, .img-div img {
+        height: auto !important;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 899.98px) {
+    .info-div {
+        text-align: -webkit-center;
     }
 }

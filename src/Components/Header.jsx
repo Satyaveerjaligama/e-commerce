@@ -15,11 +15,23 @@ const Header = () => {
     return (
         <Card sx={{borderRadius: "0px"}}>
             <CardContent className="header">
-                <Box className="display-flex jc-space-between align-items-center">
-                    <Box className="logo cursor-pointer">
+                <Box className="flex flex-col sm:flex-row justify-between items-center">
+                    <Box className="hidden sm:block logo cursor-pointer">
                         <img src={logo} alt="logo" onClick={()=>navigate(`/${routes.home}`)}/>
                     </Box>
-                    <Box>
+                    <Box className="flex sm:hidden w-full justify-between">
+                        <Box className="logo cursor-pointer">
+                            <img src={logo} alt="logo" onClick={()=>navigate(`/${routes.home}`)}/>
+                        </Box>
+                        <Box className="flex sm:hidden justify-between items-center profile-cart color-white">
+                            <AccountCircleRoundedIcon className="cursor-pointer" onClick={()=>navigate(`/${routes.account}`)} />
+                            <div className="cursor-pointer" onClick={()=>navigate(`/${routes.cart}`)}>
+                                <ShoppingCartRoundedIcon />
+                                <Typography className="cart-items-number">{cartItems.length}</Typography>
+                            </div>
+                        </Box>
+                    </Box>
+                    <Box className="mt-4 sm:mt-0 search-field-box">
                         <TextField
                             className="search-field"
                             placeholder="Search item"
@@ -35,7 +47,7 @@ const Header = () => {
                             }}
                         />                      
                     </Box>
-                    <Box className="display-flex jc-space-between align-items-center profile-cart color-white">
+                    <Box className="hidden sm:flex justify-between items-center profile-cart color-white">
                         <AccountCircleRoundedIcon className="cursor-pointer" onClick={()=>navigate(`/${routes.account}`)} />
                         <div className="cursor-pointer" onClick={()=>navigate(`/${routes.cart}`)}>
                             <ShoppingCartRoundedIcon />
