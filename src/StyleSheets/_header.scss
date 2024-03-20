@@ -41,3 +41,9 @@
     top: 0px;
     z-index: 10;
 }
+
+@media screen and (max-width: 639.98px) {
+    .search-field, .search-field-box {
+        width: 100%;
+    }
+}
