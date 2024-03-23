@@ -14,7 +14,7 @@ Redux Toolkit is being used to handle cart items.
 
 ## Technologies/Languages Used
 - JavaScript
-- React
+- React JS
 - Redux Toolkit
 - Tailwind
 - Sass
