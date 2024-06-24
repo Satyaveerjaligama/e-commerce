@@ -1,6 +1,7 @@
 # E-commerce
 This is the Frontend Application for E-commerce(not integrated with the backend).  
-It has Login, Home, Product view, Account and Cart pages.  
+It has Login, Home, Product view, Account and Cart pages.
+Components are developed in a way that if we want to integrate our application with the APIs, we will be able to integrate with minimal changes.
 Redux Toolkit is being used to handle cart items.
 
 
