@@ -21,8 +21,8 @@ const Footer = () => {
                 <Box className="footer-info text-center sm:text-left mt-6 sm:mt-0">
                     <Typography>Office Address</Typography>
                     <Typography>
-                        Door no. 180-29/A<br />
-                        Raj Complex, Opp. HDFC Bank<br />
+                        Shop no. 1218-90/A<br />
+                        Electronics Complex, Opp. Indian Bank<br />
                         Nizamabad, Telangana - 503002
                         </Typography>
                 </Box>
